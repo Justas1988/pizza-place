@@ -119,6 +119,7 @@ const EditPizza = (editID) => { //edit pizza function
 const ShowAllPizza = (SortedArray) => { //render all pizza menu from local storage
     let target = document.getElementById("root"); //div where pizza menu will be rendered
     let data = "";
+    target.innerHTML = data;
     if (SortedArray.length > 0) {
         for (let i = 0; i < SortedArray.length; i++) {
             let heatNumber = SortedArray[i].heat;
