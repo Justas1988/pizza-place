@@ -58,7 +58,7 @@ const AddPizza = () => { //add pizza to local storage
     document.getElementById("toppings").value = "";
     document.getElementById("photo").value = "";
     document.getElementById("priceSortBtn").style.backgroundColor = '';
-    ocument.getElementById("nameSortBtn").style.backgroundColor = '';
+    document.getElementById("nameSortBtn").style.backgroundColor = '';
     document.getElementById("heatSortBtn").style.backgroundColor = '';
 
 }
@@ -119,7 +119,7 @@ const EditPizza = (editID) => { //edit pizza function
 const ShowAllPizza = (SortedArray) => { //render all pizza menu from local storage
     let target = document.getElementById("root"); //div where pizza menu will be rendered
     let data = "";
-    target.innerHTML = data;
+    target.innerHTML = "";
     if (SortedArray.length > 0) {
         for (let i = 0; i < SortedArray.length; i++) {
             let heatNumber = SortedArray[i].heat;
@@ -163,7 +163,7 @@ const SortByPrice = () => { //sorting by price
         return 0;
     }
 
-    console.log(SortedArray)
+    // console.log(SortedArray)
 
     document.getElementById("priceSortBtn").style.backgroundColor = 'lightgreen';
     document.getElementById("nameSortBtn").style.backgroundColor = '';
@@ -191,7 +191,7 @@ const SortByHeat = () => { //sorting by heat
         return 0;
     }
 
-    console.log(SortedArray)
+    // console.log(SortedArray)
 
     document.getElementById("heatSortBtn").style.backgroundColor = 'lightgreen';
     document.getElementById("priceSortBtn").style.backgroundColor = '';
@@ -219,7 +219,7 @@ const SortByName = () => { //sorting by name
         return 0;
     }
 
-    console.log(SortedArray)
+    // console.log(SortedArray)
 
     document.getElementById("nameSortBtn").style.backgroundColor = 'lightgreen';
     document.getElementById("priceSortBtn").style.backgroundColor = '';
