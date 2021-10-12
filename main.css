@@ -1,0 +1,137 @@
+body,
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+main {
+    margin: 50px 100px 50px 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.formsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.editForm {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
+input {
+    height: 30px;
+    
+}
+.submitBtn {
+    width: 80px;
+    height: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+    border: 1px solid grey;
+}
+.submitBtn:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+table {
+    width: 100vh;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid orange;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+
+td {
+    border: 1px solid orange;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.hotIndicator {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.pizzaPhoto {
+    height: 100px;
+    width: 100px;
+}
+.editBtn,
+.deleteBtn {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border: 1px solid grey;
+    color: white;
+    font-weight: bold;
+}
+.deleteBtn {
+    margin-right: 5px;
+    background-color: lightcoral;    
+}
+
+.deleteBtn:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.editBtn {
+    background-color: lightsalmon;
+}
+
+.editBtn:hover {
+    cursor: pointer;
+    border: 1px solid orange;
+}
+.sortDiv {
+    margin-bottom: 8px;
+}
+ 
+.sortDiv button {
+    height: 30px;
+    border: none;
+    border: 1px solid grey;
+    color: white;
+    font-weight: bold;
+    background-color: lightsalmon;
+}
+
+.sortDiv button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#nameSortBtn {
+
+}
+
+#heatSortBtn {
+    
+}
+
+#priceSortBtn {
+    
+}
