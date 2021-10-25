@@ -30,11 +30,16 @@ const AddPizza = () => { //add pizza to local storage
     const RandomId = IdGenerator();
 
     if (localStorage.length > 0) { //checking if name is unique
-        for (let i = 0; i < localStorage.length; i++) {
-            if (pizzaName === JSON.parse(localStorage.getItem(localStorage.key(i))).name) {
-                window.alert("Pizza name already exists!")
-                return;
+        let toppings = pizzaToppings.split(",");
+        let count = 0;
+        toppings.forEach((element) => {
+            if (element !== "") {
+                count++;
             }
+        });
+        if (count < 2) {
+            window.alert("Add at least 2 toppings, seperated by comma!");
+            return;
         }
     }
     if (pizzaToppings.split(',').length < 2) { //checking if pizza has more than 1 topping
